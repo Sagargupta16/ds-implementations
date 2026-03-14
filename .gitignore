@@ -1,0 +1,15 @@
+*.class
+*.o
+*.exe
+*.out
+a.out
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
