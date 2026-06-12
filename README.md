@@ -3,12 +3,12 @@
 A comprehensive C++ library of fundamental data structures and algorithms, from basic arrays and recursion to advanced graph algorithms and self-balancing trees.
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Algorithms](https://img.shields.io/badge/Algorithms-17_Topics-blue?style=flat)
+![Algorithms](https://img.shields.io/badge/Algorithms-16_Topics-blue?style=flat)
 ![Educational](https://img.shields.io/badge/Purpose-Educational-green?style=flat)
 
 ## Overview
 
-Well-documented C++ implementations of core data structures and algorithms organized into 17 topics. Each implementation prioritizes clarity and educational value, covering the full spectrum from basic recursion patterns to Dijkstra's shortest path and AVL tree rotations.
+Well-documented C++ implementations of core data structures and algorithms organized into 16 topics. Each implementation prioritizes clarity and educational value, covering the full spectrum from basic recursion patterns to minimum spanning trees and AVL tree rotations.
 
 ## Topics Covered
 
@@ -29,7 +29,7 @@ DS-Implementations/
 ├── 14_Heap/                # Min/max heaps, heap sort
 ├── 15_SortingTechs/        # 9 sorting algorithms
 ├── 16_HashingTechs.cpp/    # Chaining, linear/quadratic probing, double hashing
-└── 17_Graphs/              # Adjacency matrix/list, BFS, DFS, MST, shortest path
+└── 17_Graphs/              # Adjacency matrix, BFS, DFS, MST
 ```
 
 ## Algorithms Index
@@ -43,10 +43,13 @@ DS-Implementations/
 | Insertion Sort | O(n^2) | O(n^2) | O(1) | Yes |
 | Merge Sort | O(n log n) | O(n log n) | O(n) | Yes |
 | Quick Sort | O(n log n) | O(n^2) | O(log n) | No |
-| Heap Sort | O(n log n) | O(n log n) | O(1) | No |
+| Heap Sort* | O(n log n) | O(n log n) | O(1) | No |
 | Count Sort | O(n+k) | O(n+k) | O(k) | Yes |
+| Bin/Bucket Sort | O(n+k) | O(n^2) | O(n+k) | Yes |
 | Radix Sort | O(nk) | O(nk) | O(n+k) | Yes |
 | Shell Sort | O(n log n) | O(n^2) | O(1) | No |
+
+*Heap Sort lives in `14_Heap/02_HeapSort.cpp`.
 
 ### Graph Algorithms (17_Graphs)
 
@@ -54,7 +57,6 @@ DS-Implementations/
 |-----------|---------|-----------|
 | BFS | Level-order traversal | O(V+E) |
 | DFS | Depth-first traversal | O(V+E) |
-| Dijkstra | Single-source shortest path | O(V^2) |
 | Prim's | Minimum spanning tree | O(V^2) |
 | Kruskal's | Minimum spanning tree | O(E log E) |
 
@@ -80,12 +82,12 @@ git clone https://github.com/Sagargupta16/DS-Implementations.git
 cd DS-Implementations
 
 # Example: Run merge sort
-g++ -o mergesort 15_SortingTechs/MergeSort.cpp
+g++ -o mergesort 15_SortingTechs/05_MergeSort.cpp
 ./mergesort
 
-# Example: Run BFS
-g++ -o bfs 17_Graphs/BFS.cpp
-./bfs
+# Example: Run graph traversals (BFS, DFS)
+g++ -o graph 17_Graphs/01_undirected_unweighted/01_adjacency_matrix.cpp
+./graph
 ```
 
 ## Learning Path
