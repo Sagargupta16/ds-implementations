@@ -66,4 +66,4 @@ so T(n) = n^2 + nlogn-n + n
 so T(n) = n^2 ==> O(n^2)
 
 Time Complexity for 2nd method
-T(n)=1+T(n-1) ===> T(n)= n ===> O(n);
+T(n)=1+T(n-1) ===> T(n)= n ===> O(n); */

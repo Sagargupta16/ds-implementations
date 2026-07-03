@@ -25,12 +25,14 @@ DS-Implementations/
 ├── 10_Tree/                # Binary tree (array/LL), all traversals
 ├── 11_BST/                 # Binary Search Tree operations
 ├── 12_AVLT/                # AVL Trees with rotations
-├── 13_Search Tree/         # 2-3 Trees, 2-3-4 Trees, Red-Black Trees
+├── 13_SearchTree/          # 2-3 Trees, 2-3-4 Trees, Red-Black Trees
 ├── 14_Heap/                # Min/max heaps, heap sort
 ├── 15_SortingTechs/        # 9 sorting algorithms
-├── 16_HashingTechs.cpp/    # Chaining, linear/quadratic probing, double hashing
+├── 16_HashingTechs/        # Chaining, linear/quadratic probing, double hashing
 └── 17_Graphs/              # Adjacency matrix, BFS, DFS, MST
 ```
+
+Note: the numbering intentionally skips 04 -- there is no missing topic.
 
 ## Algorithms Index
 

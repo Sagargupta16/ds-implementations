@@ -1,5 +1,5 @@
 #include<iostream>
-#include<math>
+#include<cmath>
 using namespace std;
 
 class BT_Array{
@@ -7,7 +7,7 @@ class BT_Array{
         char *A;
     public:
         BT_Array(int a){
-            A = new char[pow(2,a)-1];
+            A = new char[(int)pow(2,a)-1];
             A = {0};
         }
         void insert(char a){

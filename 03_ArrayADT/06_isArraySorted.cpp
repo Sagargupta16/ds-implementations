@@ -69,7 +69,7 @@ int main(){
     arr={{1,2,3,4,5,6,7,8,9,11,12,13,14},20,13};//Initialized
 
     Display(arr);
-    insertSortedArray(&arr,10);
+    insertInSortedArray(&arr,10);
     Display(arr);
 
     cout<<"Is Array Sorted (1=true and 0=false) : "<<isSorted(arr)<<endl;

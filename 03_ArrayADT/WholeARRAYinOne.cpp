@@ -491,8 +491,8 @@ int main(){
                 }
                 else if(ch4==5){
                     cout<<"Enter Index You want to see in an array :";
-                    cin>>index3;
-                    int z=get(arr1,index3);
+                    cin>>index4;
+                    int z=get(arr1,index4);
                     if(z==-1){
                         cout<<"Entered Index is not a part of Array "<<endl;
                     }
@@ -541,15 +541,15 @@ int main(){
                     leftShift(&arr1);
                     cout<<"Array Left Shifted"<<endl;
                 }
-                else if(ch4==5){
+                else if(ch5==5){
                     rightShift(&arr1);
                     cout<<"Array Right Shifted"<<endl;
                 }
-                else if(ch4==6){
+                else if(ch5==6){
                     negativeLeftSide(&arr1);
                     cout<<"-Ve Left Side arranged in Array"<<endl;
                 }
-                else if(ch4==7){
+                else if(ch5==7){
                     break;
                 }
                 else{
