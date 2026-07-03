@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Syntax-check all C++ files
+        run: |
+          set -e
+          find . -name '*.cpp' -print0 | while IFS= read -r -d '' f; do
+            echo "Checking $f"
+            g++ -std=c++17 -fsyntax-only "$f"
+          done
